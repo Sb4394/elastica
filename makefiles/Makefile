@@ -79,7 +79,7 @@ VPATH := ../source/
 
 #Linking stage
 snake: $(SNAKE_OBJS)
-	$(CC) $(CPPSETTINGS) $(LIB) $^ -o $@
+	$(CC) $(CPPSETTINGS) $^ -o $@ $(LIB) 
 	@echo done
 
 #Compiling stage	
